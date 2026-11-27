@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Release Store - Customers</title>
+<style>
+  :root{--bg:#f4f6fb;--ink:#14213d;--mut:#64748b;--card:#fff;--line:#e2e8f0;--blue:#2563eb}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+  header{background:linear-gradient(135deg,#0f1b3d,#7c3aed);color:#fff;padding:40px 20px;text-align:center}
+  header h1{margin:0;font-size:34px}
+  header p{margin:8px 0 0;opacity:.85}
+  main{max-width:1000px;margin:-24px auto 40px;padding:0 20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 6px 18px rgba(15,27,61,.08);overflow:hidden}
+  table{width:100%;border-collapse:collapse}
+  th,td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line);font-size:14px}
+  th{background:#f8fafc;color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+  tr:last-child td{border-bottom:0}
+  .avatar{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#ede9fe;color:#5b21b6;font-weight:700;margin-right:10px;vertical-align:middle}
+  .pid{display:inline-block;background:#dbeafe;color:#1e40af;font-weight:600;font-size:12px;padding:3px 10px;border-radius:99px}
+  .note{color:var(--mut);font-size:13px;margin:14px 4px}
+  footer{text-align:center;color:var(--mut);font-size:13px;padding-bottom:30px}
+  @media(max-width:640px){th:nth-child(4),td:nth-child(4){display:none}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Release Store &middot; Customers</h1>
+  <p>Customer Service &middot; who bought what (static demo data)</p>
+</header>
+<main>
+  <div class="card">
+    <table>
+      <thead><tr><th>Customer</th><th>Email</th><th>Product ID</th><th>Product</th><th>City</th></tr></thead>
+      <tbody>
+        <tr><td><span class="avatar">A</span>Asha Verma</td><td>asha.verma@example.com</td><td><span class="pid">P-101</span></td><td>Wireless Headphones</td><td>Pune</td></tr>
+        <tr><td><span class="avatar">R</span>Ravi Kumar</td><td>ravi.kumar@example.com</td><td><span class="pid">P-102</span></td><td>Smart Watch</td><td>Bengaluru</td></tr>
+        <tr><td><span class="avatar">M</span>Meena Iyer</td><td>meena.iyer@example.com</td><td><span class="pid">P-103</span></td><td>Mechanical Keyboard</td><td>Chennai</td></tr>
+        <tr><td><span class="avatar">K</span>Kiran Shah</td><td>kiran.shah@example.com</td><td><span class="pid">P-104</span></td><td>Portable Speaker</td><td>Mumbai</td></tr>
+        <tr><td><span class="avatar">S</span>Sara Khan</td><td>sara.khan@example.com</td><td><span class="pid">P-101</span></td><td>Wireless Headphones</td><td>Delhi</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">Product IDs match the products listed in the Order Service "Release Store" page.</p>
+</main>
+<p style="text-align:center;color:#2563eb;font-weight:600;margin:0 0 20px">SCRUM-4: customer service update ready for release</p>
+<footer>Release Store &middot; Customer Service &middot; demo page</footer>
+</body>
+</html>
